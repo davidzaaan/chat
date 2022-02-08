@@ -132,11 +132,6 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'users/static'),
 ]
 
-# CHANNEL_LAYERS = {
-#     'default': {
-#         'BACKEND': 'channels.layers.InMemoryChannelLayer',
-#     }
-# }
 
 CHANNEL_LAYERS = {
     'default': {
