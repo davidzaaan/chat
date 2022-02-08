@@ -1,6 +1,7 @@
 import os
 import django
 
+""" Add these two lines below to avoid Django exceptions on deployment """
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'dj-chat.settings')
 django.setup()
 
