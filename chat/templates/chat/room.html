@@ -10,8 +10,8 @@
 </head>
 <body>
     <header class="chat-room-header">
-        <h1>{{ room_name }}</h1>
-        <h2>Users online: {{ online_users_count }}</h2>
+        <h1>{{ user_name }}</h1>
+        <h2>Chat Room: {{ room_name }}</h2>
         <a href="{% url 'logout' %}" class="btn btn-danger">Logout</a>
     </header>
     <div class="container">

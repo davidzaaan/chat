@@ -36,10 +36,12 @@ def register_user(request):
     if request.method == "POST":
         form = RegisterUserForm(request.POST)
         if form.is_valid():
-            form.save()
+            form.save()          
             print('success')
-            messages.success(request, 'User registered successfully!')
+            messages.success(request, 'User registered successfully')
+            return redirect('login')
         else:
+            messages.warning(request, 'Oops, something went wrong :(')
             print('failure')
 
         
